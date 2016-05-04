@@ -1,0 +1,15 @@
+<ion-content id='landing_content' has-bouncing="false" class="has-header">
+  <ion-list>
+    <ion-item ngid="" class="page_title">
+      {{title}}<a href="{{page.subHeadLink.href}}" class="subhead_link" >{{page.subHeadLink.text}}</a>
+    </ion-item>
+    <ion-item ng-repeat="pageItem in page.content" id="{{pageItem}}" class="page_item">
+  		<button class="secondaryLink" ng-if="page.links[pageItem].secondaryLink" ng-click="{{page.links[pageItem].secondaryLink}}"></button>
+    	<button class="primaryLink" ng-if="page.links[pageItem].primaryLink" ng-click="{{page.links[pageItem].primaryLink}}"></button>
+    </ion-item>
+  </ion-list>
+  <div class="bottom_spacer"></div>
+</ion-content>
+
+
+

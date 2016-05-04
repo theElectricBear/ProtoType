@@ -1,0 +1,66 @@
+#landing_content{
+    .page_item.alert {
+        background-color:$tmo;
+        padding-bottom:0; 
+        overflow: visible;
+        .item-content{
+            padding:0;
+            div{
+    			background-size:100%;
+    			background-repeat: no-repeat;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                &.closed{
+                    padding-bottom:24.6%;
+                    -webkit-transition: padding-bottom 200ms linear, background-image 1ms linear 250ms;
+                    transition: padding-bottom 200ms linear, background-image 1ms linear 250ms;
+                }
+                &.open{
+                    &.new4, &.read4{
+                        padding-bottom:50%;
+                    }
+                        padding-bottom:36.8%;
+                        -webkit-transition: padding-bottom 200ms linear 100ms, background-image 1ms linear 100ms;
+                        transition: padding-bottom 200ms linear 100ms, background-image 1ms linear 100ms;
+                }
+            }
+        }
+        
+        .item-options .button{
+            color:#fff;
+            background-color:$tmo;
+        } 
+    }
+    .item.no_message{
+        background-color: transparent;
+        font-family: RobotoCondensed-Italic, Helvetica, Arial;
+        text-align: center;
+        border: none;
+    }
+}
+
+/*Alert Card Images*/
+.item-content .new1{
+	background-image: URL('../img/cards/alerts_cards/notification_new.png');
+};
+.item-content .new2{
+	background-image: URL('../img/cards/alerts_cards/notification_open.png');	
+};
+.item-content .new3{
+	background-image: URL('../img/cards/alerts_cards/notification_new.png');
+};
+.item-content .new4{
+	background-image: URL('../img/cards/alerts_cards/notification_open_alert.png');	
+};
+.item-content .read1{
+	background-image: URL('../img/cards/alerts_cards/notification_read.png');	
+};
+.item-content .read2{
+	background-image: URL('../img/cards/alerts_cards/notification_read_open.png');	
+};
+.item-content .read3{
+	background-image: URL('../img/cards/alerts_cards/notification_read.png');	
+};
+.item-content .read4{
+	background-image: URL('../img/cards/alerts_cards/notification_read_open_alert.png');	
+};

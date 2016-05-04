@@ -1,0 +1,101 @@
+#landing_content{
+	background-color:#f2f2f2;
+	.page_title{
+	    color: #fff;
+	    font-family: Roboto-Black, Helvetica, Arial;
+	    font-size: 2.6em;
+	    padding-left: 6%;
+	    margin-bottom: 8px;
+	    background-image: URL('../img/header/title_background.png');
+	    background-size: cover;
+	    background-position: center;
+	    border: none;
+	    height: 64px;
+	    padding-top: 26px;
+	    padding-bottom: 46px;
+	    a{
+    	    color: #fff;
+		    font-family: RobotoCondensed-light, Helvetica, Ariel;
+		    font-size: 13px;
+		    text-align: right;
+		    font-weight: bold;
+		    float: right;
+		    margin-right: 2%;
+		    text-decoration: none;
+		    padding-top: 9px;
+	    }
+	}
+
+	.page_item{
+		width: 90%;
+	    text-align: center;
+	    margin: 6% auto;
+	    padding-bottom:33.2%;
+	    background-size:cover;
+	    background-position:center;
+	    border: 1px solid #c9c9c9;
+	    right:0px;
+	    opacity: 1;
+	    -webkit-transform: translateZ(0);
+    	transform: translateZ(0);
+	    &.ng-enter-stagger{
+		  /* 100ms will be applied between each sucessive enter operation */ 
+		  -webkit-transition-delay:100ms;
+		  transition-delay:100ms;
+
+		  		  /* this is here to avoid accidental CSS inheritance */
+		  -webkit-animation-duration:0;
+		  animation-duration:0;
+
+	    }
+	    &.ng-enter{
+	    	right:30px;
+	    	opacity:.4;
+		    -webkit-transition: all 300ms ease-in;
+		    transition: all 300ms ease-in;
+
+		    // -webkit-animation: fadeInLeft 300ms;
+		    // animation: fadeInLeft 300ms;
+	    } 
+	    &.ng-enter-active{
+	    	right:0px;
+	    	opacity:1;
+		    // -webkit-animation: fadeInLeft 300ms;
+		    // animation: fadeInLeft 300ms;
+	    }  
+	    button{
+	    	position:absolute;
+	    	width:655%;
+	    	margin-left:45%;
+			display:block;
+			border:none;
+			background-color:transparent;
+		    &.primaryLink{height:75%;top:25%;}
+			&.secondaryLink{height:25%;top:0%;}
+		}
+		&#plan1 button{
+			margin-left:0;
+			top:0;
+			width:100%;
+			height:100%;
+		}
+		&#tasks button{
+			margin-left:0;
+			top:14%;
+			width:100%;
+			height:14%;
+		}
+		&#billingProfile button{
+			margin-left:0;
+			top:0;
+			width:100%;
+			height:100%;
+		}
+		&#findAStore button{
+			margin-left:0;
+			top:0;
+			width:100%;
+			height:100%;
+		}
+	}
+}

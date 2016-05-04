@@ -1,0 +1,198 @@
+#landing_content{
+	/*Global Card Images*/
+	#findAStore{
+		background-image: URL('../img/cards/home_cards/findAStore.png');
+	    padding-bottom: 34.6%;	
+	};
+	#ad1{
+		background-image: URL('../img/ads/mytmo_app_ads_03.jpg');
+		padding-bottom:34%;	
+	};
+	#ad2{
+		background-image: URL('../img/ads/mytmo_app_ads_06.jpg');
+		padding-bottom:34%;
+	};
+	#ad3{
+		background-image: URL('../img/ads/mytmo_app_ads_08.jpg');	
+	};
+	#supportCard{
+		background-image: URL('../img/cards/home_cards/support.png');
+	    padding-bottom: 34.8%;	
+	};
+	#deviceHealth{
+		background-image: URL('../img/cards/home_cards/deviceHealth.png');
+		padding-bottom:64%;	
+	};
+	#extras{
+		background-image: URL('../img/cards/bill_usage_line_cards/extra_actions_card.png');	
+		padding-bottom:49.8%;
+	};
+
+	/* Home Card Images*/
+	#payBill{
+		background-image: URL('../img/cards/home_cards/payBill.png');	
+	};
+	#dataUsage{
+		background-image: URL('../img/cards/home_cards/checkUsage.png');	
+	};
+	#status{
+		background-image: URL('../img/cards/home_cards/checkStatus.png');	
+	};
+	#changePlan{
+		background-image: URL('../img/cards/home_cards/changePlan.png');
+		padding-bottom: 34.6%;	
+	};
+	#news{
+		background-image: URL('../img/cards/home_cards/news.png');	
+	    padding-bottom: 58%;
+	}
+
+	/*Usage Card Images*/
+	#currentPlan{
+		background-image: URL('../img/cards/bill_usage_line_cards/plan_card.png');
+		padding-bottom: 34.8%;	
+	};
+	#plan1{
+		background-image: URL('../img/cards/bill_usage_line_cards/phone_card.png');
+		padding-bottom: 34.8%;	
+	};
+	#plan2{
+		background-image: URL('../img/cards/bill_usage_line_cards/phone_card.png');	
+		padding-bottom: 34.8%;
+	};
+	#plan3{
+		background-image: URL('../img/cards/bill_usage_line_cards/phone_card.png');	
+		padding-bottom: 34.8%;
+	};
+
+	/* Bill & Payments Card Images*/
+	#currentBill{
+		background-image: URL('../img/cards/bill_usage_line_cards/billing_and_payments_card_alert.png');
+		padding-bottom:45.6%;	
+	};
+	#billHistory{
+		background-image: URL('../img/cards/bill_usage_line_cards/bill_history_card.png');	
+		padding-bottom:93.6%;
+	};
+	#paymentHistory{
+		background-image: URL('../img/cards/bill_usage_line_cards/payment_history_card.png');	
+		padding-bottom:93.6%;
+	};
+
+	/*Profile Card Images*/
+	#general {
+		background-image: URL('../img/cards/profile_cards/general_card.png');	
+		padding-bottom:23.6%;
+		a.primaryLink{
+			height:100%;
+			top:0;
+			margin-left:0;
+		}
+	};
+	#billingProfile {
+		background-image: URL('../img/cards/profile_cards/billing_payments_card.png');	
+		padding-bottom:18.6%;
+	};
+	#notifications {
+		background-image: URL('../img/cards/profile_cards/notifications_card.png');	
+		padding-bottom:18.6%;
+	};
+	#familyControl {
+		background-image: URL('../img/cards/profile_cards/family_controls_card.png');	
+		padding-bottom:23.6%;
+	};
+	#blocking {
+		background-image: URL('../img/cards/profile_cards/blocking_card.png');	
+		padding-bottom:22.6%;
+	};
+	#employeeLine {
+		background-image: URL('../img/cards/profile_cards/employee_line_designation_card.png');	
+		padding-bottom:18.6%;
+	};
+	#coverageDevice{
+		background-image: URL('../img/cards/profile_cards/coverage_device_card.png');	
+		padding-bottom:22.8%;
+	};
+
+	/*Support Card Images*/
+	#deviceCoverage {
+		background-image: URL('../img/cards/support_cards/device_coverage_card.png');
+		padding-bottom:93.8%;	
+	};
+	#billingSupport{
+		background-image: URL('../img/cards/support_cards/billing_payments_card.png');
+		padding-bottom:80.4%;
+	};
+	#planUsage {
+		background-image: URL('../img/cards/support_cards/plans_usage_card.png');
+		padding-bottom:67.6%;	
+	};
+	#accountProfile{
+		background-image: URL('../img/cards/support_cards/account_profile_card.png');
+		padding-bottom:68%;
+	};
+
+	/*Shop Card Images*/
+	#phones {
+		background-image: URL('../img/cards/shop_cards/phones.png');
+		    padding-bottom: 34.8%;	
+	};
+	#tablets {
+		background-image: URL('../img/cards/shop_cards/tablets.png');
+		    padding-bottom: 34.8%;
+	};
+	#accessories {
+		background-image: URL('../img/cards/shop_cards/accessories.png');
+		    padding-bottom: 34.8%;
+	};
+	#extraActions {
+		background-image: URL('../img/cards/shop_cards/extra_actions.png');
+		padding-bottom:23%;
+	};
+
+	/*Store Locator Card Images*/
+	/***************************/
+
+	/*Contact Us Card Images*/
+	#write {
+		background-image: URL('../img/cards/contact_cards/write_card.png');
+		padding-bottom:44%;
+	};
+	#tasks {
+		background-image: URL('../img/cards/contact_cards/tasks_card.png');
+		padding-bottom:86%;
+	};
+	#feedback{
+		background-image: URL('../img/cards/contact_cards/feedback_card.png');
+	};
+
+	/*App Settings Card Images*/
+	/***************************/
+
+	/*About Card Images*/
+	#about{
+		background-image: URL('../img/cards/about_cards/about_card.png');
+		padding-bottom:50%;	
+	};
+
+	/* Line Detail Card Images*/
+	#profileInfo {
+		background-image: URL('../img/cards/bill_usage_line_cards/your_phone_card.png');	
+	};
+	#messagingUsage {
+		background-image: URL('../img/cards/bill_usage_line_cards/message_usage_card.png');
+		padding-bottom:18%;
+	};
+	#minutesUsage {
+		background-image: URL('../img/cards/bill_usage_line_cards/minutes_usage_card.png');
+		padding-bottom:18%;
+	};
+	#breakDown {
+		background-image: URL('../img/cards/bill_usage_line_cards/app_breakdown.png');
+		padding-bottom:148%;
+	};
+	#eip {
+		background-image: URL('../img/cards/bill_usage_line_cards/eip_card.png');
+		padding-bottom:32%;
+	};
+}

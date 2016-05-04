@@ -1,0 +1,124 @@
+<ion-content id='change_data_plan_content' has-bouncing="false" class="has-header">
+<!--***** SELECT *****-->
+  <section ng-if="call == 'select'" class="flow_content select">
+    <header>
+      <div class="page_status">
+        <ul>
+          <li class="selected">select</li>
+          <li>review</li>
+          <li>confirm</li>
+        </ul>
+      </div>  
+      <div>
+        <h3>Change data service</h3>
+        <p>Select your data option.</p>
+        <p class="bold">Working on:</p>
+        <p>Eric, (555)-555-5555</p>
+      </div>
+    </header>
+    <form ng-submit="review()">
+      <ion-list>
+        <ion-item ng-repeat="plan in dataPlans.plans | orderBy:'code'" id="{{plan.key}}" class="data_plan_card">
+          <label>
+            <p ng-show="{{plan.active}}" class="current">Currently Active</p>
+            <h2 class="copy">{{plan.copy}}</h2>
+            <label class="price">{{plan.priceString}}<input type="radio" name="{{plan.code}}" ng-model="dataCodes.newCode"  ng-click="changePlan()" value="{{plan.code}}" checked="{{plan.selected}}"/><span></span></label>
+            <p class="more_details">+ More details</p>
+          </label>
+        </ion-item>
+      </ion-list>
+      <div>
+        <label class="buttons">      
+          <button class="next" type="submit" ng-disabled="myForm.user.$dirty || myForm.password.$dirty">Next</button>
+          <button class="cancel" ng-click="home()">Cancel</button>
+        </label>
+      </div>
+    <form>
+    <div class="legal"><div>
+  </section>
+
+
+  <!--***** REVIEW *****-->
+  <section ng-if="call == 'review'" class="flow_content review">
+    <header>
+      <div class="page_status">
+        <ul>
+          <li class="selected">select</li>
+          <li class="selected">review</li>
+          <li>confirm</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Review Changes</h3>
+      </div>
+      </header> 
+    <div>
+      <p class="monthly_total"><span>New monthly total*</span><span class="right">${{changeDataPlan.newTotal}}</span></p>
+
+        <hr />
+      <p class="monthly_total"><span>Current monthly total**</span><span class="right">${{changeDataPlan.currentTotal}}</span></p>
+    </div>
+    <div class="account_member">
+      <h3>Eric<br><span>(555)-555-5555<span></h3>
+    </div>
+    <div class="compare_details">
+      <div class="added">
+        <p class="status">added</p>
+        <h4>{{changeDataPlan.newPlan.copy}}</h4><span>{{changeDataPlan.newPlan.priceString}}</span>
+        <p class="effect">takes effect <span>07/23/2015</span></p>
+      </div>
+      <hr />
+      <div class="removed">
+        <p class="status">removed</p>
+        <h4>{{changeDataPlan.removedPlan.copy}}</h4><span>{{changeDataPlan.removedPlan.priceString}}</span>
+        <p class="effect">takes effect 07/23/2015</p>
+      </div>
+    </div>
+    <div>
+      <a ng-click="select()">Edit plan or service</a>
+      <p class="tc">By clicking "Accept & Continue" you agree to the</p>
+      <p class="tc">Terms & Conditions</p>
+      <div class="buttons">
+        <button class="next" ng-click="confirm()">Accept & Continue</button>
+        <button class="cancel" ng-click="home()">Cancel</button>
+      </div>
+    </div>
+    <div class="legal"><div>
+  </section>    
+
+  <!--***** CONFIRM *****-->
+  <section ng-if="call == 'confirm'" class="flow_content confirm">
+    <header>
+      <div class="page_status">
+        <ul>
+          <li class="selected">select</li>
+          <li class="selected">review</li>
+          <li class="selected">confirm</li>
+        </ul>
+      </div>
+      <div>
+      </div>
+    </header>  
+      <div>
+        <h2>Your changes have been submitted successfully</h2>
+        <p class="monthly_total">New monthly total* <span>{{changeDataPlan.newPlan.priceString}}</span></p>
+        <p class="account_member">Eric<br> (555)-555-5555</p>
+      </div>
+
+    <div class="compare_details">
+      <div class="added">
+        <p class="status">added</p>
+        <h4>{{changeDataPlan.newPlan.copy}}</h4><span>{{changeDataPlan.newPlan.priceString}}</span>
+        <p class="effect">takes effect <span>07/23/2015</span></p>
+      </div>
+      <hr />
+      <div class="removed">
+        <p class="status">removed</p>
+        <h4>{{changeDataPlan.removedPlan.copy}}</h4><span>{{changeDataPlan.removedPlan.priceString}}</span>
+        <p class="effect">takes effect 07/23/2015</p>
+      </div>
+    </div>
+    <form>
+    <div class="legal"><div>
+  </section> 
+</ion-content>

@@ -1,0 +1,114 @@
+{
+  "home" : {
+    "title" : "Alexandria",
+    "subHeadLink" : {
+      "href" : "#/app/landing/profile",
+                    "text" : "Profile Settings"
+    },
+    "content" : ["payBill", "dataUsage", "ad1",  "changePlan", "deviceHealth", "status", "findAStore", "news",  "supportCard"],
+    "links" : {
+        "payBill" : {
+            "primaryLink" : "goTo('one-time-payment','pay')",
+            "secondaryLink" : "goTo('billing-details','')"
+        },
+        "dataUsage" : {
+            "primaryLink" : "goTo('landing','line-details')",
+            "secondaryLink" : "goTo('landing','usage')"
+        },  
+        "changePlan" : {
+            "primaryLink" : "goTo('change-data-plan','select')",
+            "secondaryLink" : "goTo('plan-details','')"
+        },
+        "findAStore" : {
+            "primaryLink" : "goTo('map','')"
+        }   
+    }
+  },
+
+  "alerts" : {
+    "title" : "Alerts",
+    "content" : ["new1", "new2",  "read1",  "read2"]
+  },
+
+  "account" : {
+    "title" : "Account",
+    "content" : ["ad"]
+  },
+
+  "billing" : {
+    "title" : "Billing & Payments",
+    "content" : ["currentBill",  "billHistory",  "paymentHistory",  "extras",  "ad2",  "supportCard"],
+    "links" : {
+      "currentBill" : {
+          "primaryLink" : "goTo('one-time-payment','pay')",
+          "secondaryLink" : "goTo('billing-details','')"
+      }   
+    }
+  },
+
+  "usage" : {
+    "title" : "Usage & Plans",
+    "content" : ["currentPlan",  "plan1",  "plan2",  "plan3",  "ad3",  "supportCard"],
+    "links" : {
+        "currentPlan" : {
+          "primaryLink" : "goTo('change-data-plan','select')",
+          "secondaryLink" : "goTo('plan-details','')"
+        },
+        "plan1" : {
+          "primaryLink" : "goTo('landing','line-details')"
+        }
+    }
+  },
+
+  "support" : {
+    "title" : "Support",
+    "content" : ["deviceHealth",  "deviceCoverage",  "billingSupport",  "planUsage",  "accountProfile",  "supportCard"]
+  },
+
+  "profile" : {
+    "title" : "Profile Settings",
+    "content" : ["general",  "billingProfile",  "notifications",  "familyControl",  "blocking",  "employeeLine",  "coverageDevice",  "supportCard"],
+    "links" : {
+        "general" : {
+            "primaryLink" : "goTo('general-profile','')"
+        },
+        "billingProfile" : {
+            "primaryLink" : "goTo('billing','')"
+        }   
+    }
+  },
+
+  "app-settings" : {
+    "title" : "App Settings",
+    "content" : ["ad3"]
+  },
+
+  "about" : {
+    "title" : "About",
+    "content" : ["about"]
+  },
+
+  "line-details" : {
+    "title" : "Line Details",
+    "subHeadLink" : {
+        "href" : "",
+        "text" : "1 of 3"
+    },
+    "content" : ["profileInfo", "dataUsage","messagingUsage","minutesUsage","breakDown",  "changePlan",  "eip", "extras",   "ad2",  "supportCard"],
+    "links" : {
+        "dataUsage" : {
+            "primaryLink" : "goTo('usage-details','')",
+            "secondaryLink" : "goTo('landing','usage')"
+        },
+        "minutesUsage" : {
+            "primaryLink" : "goTo('usage-details','')"
+
+        },    
+        "changePlan" : {
+            "primaryLink" : "goTo('change-data-plan','select')",
+            "secondaryLink" : "goTo('plan-details','')"
+        }
+    }
+  }
+
+} 

@@ -1,0 +1,163 @@
+
+#one_time_payment_content{
+	background-color:#f2f2f2;
+	.flow_content{
+		background-color:#fff;
+
+	    border-radius: 3px;
+	    margin: 0% auto;
+	    padding-bottom:10%;
+	    font-family: Roboto-Regular, Helvetica, Arial;
+		font-size:16px;
+		&.confirm{
+			margin-bottom:30%;
+			.spacer{padding-top:20%;}
+		}
+	   	.bold{
+	   		font-family: Roboto-Medium, Helvetica, Arial;
+	    }
+	    .border_top{
+			border-top: 1px #c6c6c6 solid;
+	    }
+	    .gradient{
+	    	background-image: URL('../img/misc/gradient.png');
+			background-size:110%;
+	    	background-position:bottom;
+	    	background-repeat: no-repeat;
+	    	padding-bottom:8%;
+	    }
+	    p{margin-bottom:0;}
+	    header{
+	    	padding:3% 3% 3% 10%;
+    		p{margin:0;}
+    		&.review_header, &.confirm_header{
+    			padding:3% 5%;
+    			background-color:#f2f2f2;
+    			h4{font-size:20px}
+    			p{
+    				font-size:14px;
+    				color:#666
+    			}
+    		}
+	    }
+	    .payment, .paywith{
+			padding: 0 5%;
+		    	p{
+	    		font-size:14px;
+    			color:#666;
+    			margin-bottom:2px;
+    			span{
+	    			display:inline-block;
+	    			width:50%;
+	    			&.bold{
+	    				color:#333;
+	    			}
+	    		}
+	    		&.tc{
+					font-size:12px;
+					margin: 20px 0;
+				}
+	    	}
+	    	.align_right{text-align:right;}
+	    }
+	    .payment{
+	    	color:#666;
+	    	line-height:34px;
+	    }
+	    .sign_up_easy_pay{
+			padding: 5% 5% 0;
+			p{
+    			font-size:14px;
+    			color:#666;
+    		}
+    		.buttons{
+				width:100%;
+				margin-bottom:0;
+    		}
+	    }
+	    form{
+	    	div{
+	    		padding:3% 3% 3% 10%;
+	    	}
+	    	.shiftLeft{
+		    	position:relative;
+		    	left:-18px;
+		    }
+	    	label {
+	    		p.balance{
+	    			font-size:20px;
+	    		}
+				position:relative;
+	    		input{
+		    		display: inline-block;
+				    color: #999;
+				    font-size: 14px;
+				    line-height:20px;
+				    padding: 0 4px 0px 10px;
+				    border: 2px #c6c6c6 solid;
+				    border-radius: 5px;
+				    width: 80%;
+				    height: 32px;
+				}
+				input[type=date] {
+				    
+    				line-height: 24px;
+    				height: 24px;
+				}
+				input[type=radio] {
+					display:none;
+
+				}
+				input[type=radio] + span{
+				    display: inline-block;
+				    width: 12px;
+				    height: 12px;
+				    position: absolute;
+				    left:-20px;
+				    top:2px;
+					background-image: URL('../img/misc/radio.png');
+					background-size:cover;
+	    			background-position:center;
+	    			&.payment{
+	    				top: 18px;
+	    				height:
+	    			}
+				}
+				input[type=radio]:checked + span{
+					background-image: URL('../img/misc/radio_selected.png');
+				}
+
+			}			
+		}
+		.buttons{
+			width:90%;
+			margin: 5% auto 15%;
+			display:block;
+			button{
+				width:100%;
+				margin-bottom:6%;
+				border:none;
+				border-radius: 3px;
+				margin-bottom: 6%;
+				font-size: 18px;
+				line-height: 2em;
+				text-align:center;
+				text-transform: uppercase;
+				&.next{
+					color:#fff;
+					background:$tmo;
+				}
+				&.cancel{
+					color:$tmo;
+					background:#fff;
+					border: 1px #c6c6c6 solid;
+				}
+			}
+		}	
+		a{
+			color:$tmo;
+		}
+	}
+
+}
+

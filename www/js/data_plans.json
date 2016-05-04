@@ -1,0 +1,85 @@
+{
+	"plans":{
+
+	  "001-13GBHSD" : {
+	  	"code" : "001-13GBHSD",
+	    "copy" : "13 GB High Speed Data with Data Stash",
+	    "price" : "60.00",
+	    "priceString": "$60.00",
+	    "active" : true,
+	    "selected" : "unchecked"
+	  },
+
+	  "003-2GBHSD" : {
+	  	"code" : "003-2GBHSD",
+	    "copy" : "2.5 GB High-Speed Data",
+	    "price" : "0.00",
+	    "priceString": "Free",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "004-4GBHSD" : {
+	  	"code" : "004-4GBHSD",
+	    "copy" : "4.5 GB High-Speed Data with Data Stash",
+	    "price" : "10.00",
+	    "priceString": "$10.00",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "005-5GBHSD" : {
+	  	"code" : "005-5GBHSD",
+	    "copy" : "5 GB High-Speed Data with Data Stash",
+	    "price" : "20.00",
+	    "priceString": "$20.00",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "006-7GBHSD" : {
+	  	"code" : "006-7GBHSD",
+	    "copy" : "7 GB High-Speed Data with Data Stash",
+	    "price" : "30.00",
+	    "priceString": "$30.00",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "007-10GBSC" : {
+	  	"code" : "007-10GBSC",
+	    "copy" : "Simple Choice North America 10GB",
+	    "price" : "20.00",
+	    "priceString": "$20.00",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "008-UN7GB" :  {
+	  	"code" : "008-UN7GB",
+	    "copy" : "Unlimited Nationwide 4G + 7 GB Smartphone Mobile HotSpot",
+	    "price" : "30.00",
+	    "priceString": "$30.00",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "009-UN9GB" : {
+	  	"code" : "009-UN9GB",
+	    "copy" : "Unlimited Nationwide 4G + 9 GB Smartphone Mobile HotSpot",
+	    "price" : "40.00",
+	    "priceString": "$40.00",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  },
+
+	  "010-NULL" : {
+	  	"code" : "010-NULL",
+	    "copy" : "No Data",
+	    "price" : "0.00",
+	    "priceString": "Free",
+	    "active" : false,
+	    "selected" : "unchecked"
+	  }
+	}
+} 

@@ -1,0 +1,111 @@
+<ion-content id='one_time_payment_content' has-bouncing="false" class="has-header">
+<!--***** SELECT *****-->
+  <section ng-if="call == 'pay'" class="flow_content">
+  <header class="gradient"> 
+      <h4>Pay Bill</h4>
+      <p>Due date: <span class="bold">May 21, 2015</span></p>
+  </header>
+  <form ng-submit="review()">
+    <div class="gradient border_top">
+      <label class="amount"><input type="radio" ng-model="oneTimePayment.payment" value="balance" ng-change="changeAmount()" checked="checked"/>
+        <span></span>Balance:
+        <p class="balance">{{oneTimePayment.balance}}</p>
+      </label>
+    </div>
+    <div class="gradient border_top">  
+      <label class="amount" ><input type="radio" ng-model="oneTimePayment.payment" ng-change="changeAmount()" value="other"/>
+        <span></span>Other amount:<br />
+        <label class="amount"><input type="text" name="otherAmount" ng-model="oneTimePayment.otherAmount"  ng-click="payAmount()"/>
+      </label>
+    </div>
+    <div class="border_top">
+      <label class="date shiftLeft" ><h5>Pay on</h5><input type="date" name="" ng-model="oneTimePayment.payOn"/>
+      </label>
+      <h5 class="shiftLeft">Pay with</h5>
+      <label class="payment"><input type="radio" name="storedPayment" ng-model="oneTimePayment.paymentType" value="storedPayment" />
+        <span></span><span class='visa'></span> ************1701
+      </label><br />
+      <label class="payment"><input type="radio" name="newcardPayment" ng-model="oneTimePayment.paymentType" value="newCardPayment" ng-disabled="true"/>
+        <span></span>New Card
+      </label><br />
+      <label class="payment"><input type="radio" name="{{plan.code}}" ng-model="oneTimePayment.paymentType" value="newCheckingPayment" ng-disabled="true"/>
+        <span></span>New Checking Account
+      </label><br />
+    </div>
+    
+
+    <label class="buttons">      
+      <button class="next" type="submit" ng-disabled="myForm.user.$dirty || myForm.password.$dirty">Next</button>
+    </label>
+  <form>
+</section>
+
+<!--***** REVIEW *****-->
+<section ng-if="call == 'review'" class="flow_content">
+  <header class="review_header"> 
+    <div>
+      <h4>Review payment imformation</h4>
+      <p>Please review your payment information and the select Submit. Allow up to two hours for your payment to post to your account</p>
+    </div>
+  </header>
+  
+  <div class="payment">
+    <h5>Payment</h5>
+    <p><span class="align_left bold">Customer:</span><span class="align_right">{{oneTimePayment.user}}</span></p>
+    <p><span class="align_left bold">Amount:</span><span class="align_right">{{oneTimePayment.paymentAmount}}</span></p>
+    <p><span class="align_left bold">Pay on:</span><span class="align_right">{{oneTimePayment.payOn | date:'MM-dd-yyyy'}}</span></p>
+  </div>
+  <div class="paywith">
+    <h5>Pay with</h5>
+    <p><span class="align_left bold">Name:</span><span class="align_right">{{oneTimePayment.user}}</span></p>
+    <p><span class="align_left bold">Account:</span><span class="align_right"><span class='visa'></span> ************1701</span></p>
+    <p><span class="align_left bold">Zip:</span><span class="align_right">12345</span></p>
+    <p><span class="align_left bold">Transaction type:</span><span class="align_right">one time payment</span></p>
+    <p><span class="align_left bold">T-Mobile account number:</span><span class="align_right">123456789012345</span></p>
+    <a ng-click="pay()" class="edit bold">Edit</a>
+    <p class="tc">By clicking "agree & submit" you agree to the<br />
+      <a ng-click="pay()">Terms & Conditions</a>
+    </p>
+  </div>
+  
+  <div class="buttons">
+    <button class="next" ng-click="confirm()">Agree & submit</button>
+    <button class="cancel" ng-click="pay()">Cancel</button>
+  </div>
+</section>    
+
+<!--***** CONFIRM *****-->
+<section ng-if="call == 'confirm'" class="flow_content confirm">
+  <header class="confirm_header"> 
+    <div>
+      <h3><span class="check"></span>Thank you!</h3>
+      <p>We appreciate your bussiness. This payment is being processed and may take up to two hours to post to your account.</p>
+      
+    </div>
+  </header>
+
+  <div class="sign_up_easy_pay">
+    <h4>Sign up for EasyPay</h4>
+    <p>EasyPay is a free service that allows you to pay your monthly T-Mobile bill by automatically deduction payments from your credit/debit or ATM card or checking account every month.</p>
+    <div class="buttons">
+      <button ng-click="" class="next">sign up now</button>
+    </div>
+  </div>
+
+  <div class="payment border_top">
+    <h5>Payment</h5>
+    <p><span class="align_left bold">Customer:</span><span class="align_right">{{oneTimePayment.user}}</span></p>
+    <p><span class="align_left bold">Amount:</span><span class="align_right">{{oneTimePayment.paymentAmount}}</span></p>
+    <p><span class="align_left bold">Pay on:</span><span class="align_right">{{oneTimePayment.payOn | date:'MM-dd-yyyy'}}</span></p>
+  </div>
+  <div class="paywith">
+    <h5>Pay with</h5>
+    <p><span class="align_left bold">Name:</span><span class="align_right">{{oneTimePayment.user}}</span></p>
+    <p><span class="align_left bold">Account:</span><span class="align_right"><span class='visa'></span> ************1701</span></p>
+    <p><span class="align_left bold">Zip:</span><span class="align_right">12345</span></p>
+    <p><span class="align_left bold">Transaction type:</span><span class="align_right">one time payment</span></p>
+    <p><span class="align_left bold">T-Mobile account number:</span><span class="align_right">123456789012345</span></p>
+  </div>
+  <div class="spacer"></div>
+ </section> 
+</ion-content>

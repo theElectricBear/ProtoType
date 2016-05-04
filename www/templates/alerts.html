@@ -1,0 +1,15 @@
+<ion-content id='landing_content' has-bouncing="false" class="alerts has-header">
+  <ion-list  show-delete="false" can-swipe="true">
+    <ion-item id="" class="page_title">
+      Alerts
+    </ion-item>
+    <ion-item ng-repeat="alert in alerts" class="page_item alert">
+      <div ng-class="[alert.class, alert.status]" ng-click="swapClass(alert)"></div>
+	    <ion-option-button ng-click="deleteAlert(alert)">Delete</ion-option-button>
+    </ion-item>
+    <ion-item ng-show="alertCount <= 0" class="no_message">
+      <p>You have no alerts at this time</p>
+    </ion-item>
+  </ion-list>
+  <div class="bottom_spacer"></div>
+</ion-content>

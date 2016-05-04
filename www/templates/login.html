@@ -1,0 +1,14 @@
+<ion-view view-title="Log In">
+  <ion-pane id="logIn" class="pass form_show">
+    <div class="spacer"></div>
+	<form ng-controller="LogIn" name="logInForm" ng-submit="submitLogIn()">
+		<div>
+			<p><label /><input type="text" id="user" ng-model="userInput" ng-change="validateInputs()" placeholder="Phone Number or Email" ></p>
+			<p><input type="password" id="password" ng-model="passwordInput" ng-change="validateInputs()" placeholder="Password" ></p>
+		</div>	
+		<button class="primaryCta signIn click" ng-click="goHome()" type="submit" ng-disabled="disableSubmit"></button>
+	</form>
+    <button class="forgot" ng-click="goPass()">Forgot your password</button>
+    <button class="signUp" ng-click="goHome()">Sign up</button>
+  </ion-pane>
+</ion-view>

@@ -1,0 +1,33 @@
+<ion-side-menus enable-menu-with-back-views="true">
+  	<ion-side-menu-content on-swipe="test()" on-click="test()">
+		<ion-header-bar align-title="center" no-tap-scroll="true" class="bar-positive" ng-if="nav">
+			<button class="back_chevron button-clear" ng-click="goBack()" ng-show="showBack"><i class="ion-chevron-left"></i></button>
+
+			<div class="hamburger" ng-class="{true: 'back_present'}[showBack]">
+				<span ng-show="_newAlerts > 0" class="alert_badge">{{ _newAlerts }}</span>
+				<button class="header_btn header_btn_animate" ng-class="{true: 'menu_open', false: 'menu_close'}[menuStatus._isOpen]" menu-toggle="left" on-tap="hamburgerAction();">
+					<span></span><span></span><span></span>
+				</button>
+			</div>
+			<h1 class="title">&nbsp;</h1>
+			<button id="call" class="button button-clear">
+				<span></span>Call us
+			</button>
+		</ion-header-bar> 
+    	<ion-nav-view name="mainContent" on-swipe="hamburgerAction()"></ion-nav-view>
+  	</ion-side-menu-content>
+
+	<ion-side-menu id='menu_content' ng-class="{true: 'menu_open', false: 'menu_close'}[menuStatus._isOpen]" side="left">
+		<ion-pane>
+			<ion-list>
+				<ion-item ng-repeat="menuItem in menuItems" id="{{menuItem.call}}" class="menu_item" menu-close ng-click="{{menuItem.click}}">
+		        		<span class="item_badge"></span>
+		  				<button class="menu_btn primary">
+		     				{{menuItem.title}}
+		  				</button> 
+		                <span ng-if="menuItem.badge && _newAlerts > 0" class="alert_badge">{{ _newAlerts }}</span>
+				</ion-item>
+			</ion-list>
+		</ion-pane>
+	</ion-side-menu>
+</ion-side-menus>

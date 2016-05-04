@@ -1,0 +1,79 @@
+
+  {
+    "title": "Home",                
+    "call": "home",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "Alerts",                
+    "call": "alerts",
+    "extraContent" : "<span class='alert_badge'>3</span>",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "Account",                
+    "call": "account",
+    "extraContent" : "",
+    "subNavItems" : [
+      {
+        "title": "Billing & Payments",
+        "call": "billing",
+      },{
+        "title": "Usage & Plans",
+        "call": "usage",
+      },
+      {
+        "title": "Support",
+        "call": "support",
+      },
+      {
+        "title": "Profile Settings",
+        "call": "profile",
+      }
+    ]
+  }
+
+  {
+    "title": "Shop",                
+    "call": "shop",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "Store Locator",                
+    "call": "storeLocator",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "Contact Us",                
+    "call": "contactus",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "App Settings",                
+    "call": "App Settings",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "About the App",                
+    "call": "aboutTheApp",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }
+
+  {
+    "title": "Logout",                
+    "call": "logout",
+    "extraContent" : "",
+    "subNavItems" : {}
+  }

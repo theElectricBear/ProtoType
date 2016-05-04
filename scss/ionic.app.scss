@@ -1,0 +1,161 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+$positive : #e20074;
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+$tmo: #e20074;
+$tmoDark: #bb0060;
+$five: 374px;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+@import "_fonts.scss";
+@import "_animate.scss";
+@import "_pass_login.scss";
+@import "_header_menu.scss";
+@import "_card_backgrounds.scss";
+@import "_landing_pages.scss";
+@import "_change_data.scss";
+@import "_one_time_payment";
+@import "_alerts.scss";
+
+
+*{
+	font-family: RobotoCondensed-Regular, Helvetica, Arial;
+}
+
+body, .pane, .view{
+    background-color:$tmo;
+}
+
+.scroll{height:100%;}
+
+.has-header{top: 54px;}
+
+.menu-animated {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  -webkit-transition: 500ms ease-out !important;
+  transition: 500ms ease-out!important;
+}
+
+.visa{
+    display: inline-block !important;
+    height: 26px !important;
+    width: 43px !important;
+    background-color: green;
+    background: URL('../img/misc/sprite.png') no-repeat;
+    background-size: 1610%;
+    background-position: 0px -294px;
+    position: relative;
+    top: 6px;
+}
+.check{
+    display: inline-block !important;
+    height: 20px !important;
+    width: 20px !important;
+    background-color: green;
+    background: URL('../img/misc/sprite.png') no-repeat;
+    background-size: 1930%;
+    background-position: -136px -51px;
+    position: relative;
+
+}
+.alert_badge{
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    z-index: 20;
+    font-family: Roboto-Medium, Helvetica, Arial;
+    font-size: 11px;
+    line-height: 16px;
+    text-align: center;
+    background-color: #000;
+    border-radius: 10px;
+}
+//usage details
+#landing_content{
+	#usage_details{
+		width: 100%;
+        margin: 0;
+        background-image: URL('../img/usage_detail/usage_details.png');
+        padding-bottom: 220%;	
+	}
+}
+
+//billing details
+#landing_content{
+	#billing_details{
+	    width: 100%;
+        margin: 0;
+        background-image: URL('../img/billing_detail/billing_details.png');
+        padding-bottom: 398%;	
+	}
+}
+
+//general profile
+#landing_content{
+	#general_profile{
+		width:90%;
+		margin:3% auto 0;
+		background-image: URL('../img/general_profile/general_profile.png');
+		padding-bottom:84%;	
+	}
+}
+
+//plan details
+#landing_content{
+	#plan_details{
+		width:90%;
+		margin:3% auto 0;
+		background-image: URL('../img/cards/plan_details_cards/plan_detail_card.png');
+		padding-bottom: 198%;	
+	}
+}
+
+//find a store details
+#landing_content{
+    .page_title{
+        margin-bottom:0;
+    }
+    #map_container{
+        width:100%;
+        height:100%;
+        border: 1px solid #6a6a6a;
+        .map_image {
+            background-image: URL('../img/map/map.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            height: 1377px;
+            width: 2428px;
+        }
+    }
+}
+
+
+.bottom_spacer{height:80px;}
+
+
+
+
+
+
+
+

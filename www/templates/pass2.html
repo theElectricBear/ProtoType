@@ -1,0 +1,25 @@
+<ion-view view-title="pass2">
+  <ion-pane id="pass2" class="pass form_show">
+    <form name="ConnectionAssistant" novalidate>
+  		<h4>Connection Assistant</h4>
+  		<p>T-Mobile would like to collect your location to provide WiFi network connection assistance and troubleshooting services. We will use your location information in combination with other data collected by the system manager to:
+		    <ul>
+          <li>help you connect to WiFi networks</li>
+          <li>assist you when you contact us</li>
+          <li>provide you with information about your device through the My Account portal or application.</li>
+    	  </ul>
+      	</p>
+  		<p>We may also use this information for troubleshooting, reporting and optimization purposes consistent with our Privacy Policy.</p>
+  		<p>T-Mobile may retain this data for up to one year.</p>
+  		<p>By clicking accept, you agree to T-Mobile's collection and use of your location data to improve your network and WiFi experience as described above. After accepting these terms, you can change your settings in the T-Mobile App Settings menu.</p>
+
+        <div class="checkbox">
+          <input type="checkbox" id="connection" ng-model="blah" class="cb" name="cb" />
+          <label for="connection"></label>
+        </div>
+      <p class="agree">Agree</p>
+    </form>
+    <button class="primaryCta click" ng-click="offers()" ng-disabled="!blah"></button>
+    <button class="skip" ng-click="goHome()">Skip</button>
+  </ion-pane>
+</ion-view>

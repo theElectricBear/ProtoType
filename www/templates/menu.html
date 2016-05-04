@@ -1,0 +1,22 @@
+<ion-content id='menu_content' class="item-animate has-header" ng-hide="!menuStatus._isOpen" ng-class="{true: 'menu_close', false: 'menu_open'}[!menuStatus._isOpen]" has-bouncing="false">
+  <ion-list>
+    <ion-item ng-repeat="menuItem in menuItems" id="{{menuItem.call}}" class="menu_item" ng-click="{{menuItem.click}}">
+    	<a class="item-content">
+        <span class="item_badge"></span>
+      		<button class="menu_btn primary">
+         		{{menuItem.title}}
+      		</button> 
+                <span ng-if="menuItem.badge && _newAlerts > 0" class="alert_badge">{{ _newAlerts }}</span>
+                <span ng-if="menuItem.caret" class="subnav_badge" ng-class="{true: 'subnav_close', false: 'subnav_open'}[!subNavStatus._isOpen]"></span>
+      </a>
+      <ion-item ng-repeat="subNavItem in menuItem.subNavItems" ng-click="{{subNavItem.click}}" id="{{subNavItem.call}}" class="subnav_item" ng-hide="!subNavStatus._isOpen" href="{{subNavItem.href}}">
+        <button class="menu_btn">
+          {{subNavItem.title}}
+        </button>     
+      </ion-item>
+    </ion-item>
+    <ion-item id="logOut" class="menu_item" ng-click="logOut()"> 
+    </ion-item>
+  </ion-list>
+</ion-content>
+

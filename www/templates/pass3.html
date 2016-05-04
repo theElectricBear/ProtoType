@@ -1,0 +1,19 @@
+<ion-view view-title="Pass3">
+  <ion-pane id="pass1" class="pass form_show">
+  	<form name="SpecialOffers" novalidate>
+		<h4>Special Offers</h4>
+		<p>T-Mobile is constantly improving our product lineup to provide the best wireless experience in the industry. We'd love to better understand how you use your device so we can share special T-Mobile offers and promotions with you.</p>
+		<p>Diagnostics and location data collected from the device can provide insight into your device usage; this includes location data, call quality, network quality and performance, applications used and battery performance. We do not look at the content of text messages or emails, and we do not share this information with third parties for their own use.</p>
+		<p>You can change your settings within 'Options' in the My Account application.</p>
+		</p>
+
+        <div class="checkbox">
+          <input type="checkbox" id="offers" ng-model="blahblah" class="cb" name="cb" />
+          <label for="offers"></label>
+        </div>
+      <p class="agree">Agree</p>
+    </form>
+    <button class="primaryCta click" ng-click="goHome()" ng-disabled="!blahblah"></button>
+    <button class="skip" ng-click="goHome()">Skip</button>
+  </ion-pane>
+</ion-view>
